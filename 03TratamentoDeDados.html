@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>terceiro programa</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgb(42, 24, 199)
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Parágrafo 1</p>
+    <p>Parágrafo 2</p>
+    <script>
+        var i1 = window.prompt('Primeiro inteiro')  // string
+        var i2 = window.prompt('Segundo inteiro')  // string
+        var si = i1 + i2  // será concatenado
+        window.alert('A soma (não) é ' + si)
+        window.alert('A soma é ' + (Number.parseInt(i1)+Number.parseInt(i2)))  // tranforma em inteiros (caso um float seja passado, será arredondado)
+        
+        var f1 = Number.parseFloat(window.prompt('Primeiro float'))  // aceita floats como também inteiros (que serão transformados)
+        var f2 = Number.parseFloat(window.prompt('Segundo float'))
+        var sf = f1 + f2
+        window.alert('A soma é '+ sf)
+
+        var n1 = Number(window.prompt('Primeiro número (qualquer tipo)'))  // classe global de números
+        var n2 = Number(window.prompt('Segundo número (qualquer tipo)'))
+        var sn = n1 + n2
+        window.alert('A soma é ' + sn)
+
+        var st1 = String(window.prompt('Primeira string'))
+        var st2 = f2.toString()  // ou String(f2) ou, neste caso, não é necessária a conversão
+        var sst = st1 + st2
+        window.alert('Sua segunda string será o segundo float inserido')
+        window.alert('A soma (concatenação) é ' + sst)
+    </script>
+</body>
+</html>

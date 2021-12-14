@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quarto programa</title>
+    <style>
+        body{
+            background-color: yellow;
+            font: normal 20 pt Arial;
+            color:darkblue;
+        }
+        h1 {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatação</h1>
+    <p>`x = ${x}`</p>
+    <script>
+        /* STRINGS */
+        var x = window.prompt('String a ser formatada:')
+        document.write(`O valor <strong>${x}</strong> foi atribuído a x.</br>`)  // é obrigatorio o uso de crase; </br> quebra a linha
+        document.write(`<strong>"${x}"</strong> tem ${x.length} caracteres</br>`)  // tamanho
+        document.write(`${x} em maiúsculas é <strong>"${x.toUpperCase()}"</strong> e em minúsculas é <strong>"${x.toLowerCase()}"</strong></br>`)
+        /* NÚMEROS */
+        var y = Number(window.prompt('Número a ser formatado:'))
+        document.write('</br> ')
+    </script>
+</body>
+
+</html>
